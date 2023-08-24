@@ -413,7 +413,49 @@
     color: var(--secondary) !important;
 }
 
+/*** hotel info card ***/
+.hotel-location{
+    font-size: 12px;
+}
 
+.room-type{
+    font-size: 15px;
+    font-weight: 500;
+    color: #0F172B;
+    letter-spacing: .9px;
+}
+
+.text-body {
+    display: flex;
+    align-items: center;
+}
+
+.text-body span:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+.room-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70px;
+    overflow: hidden;
+}
+.room-detail small span {
+    border-right: 1px solid #DEE2E6;
+    margin:5px 0px 10px 0;
+    display: inline;
+}
+.room-detail small span:nth-child(3),
+.room-detail small span:nth-child(5),
+.room-detail small span:nth-child(6){
+    border: none;
+}
+.show-more-btn{
+    display: block;
+    margin: 6rem auto;
+    
+}
 /*** Footer ***/
 .newsletter {
     position: relative;
